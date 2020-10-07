@@ -28,8 +28,6 @@ var now_time = function() {
         day = day + 'th';
     }
 
-
-
     document.getElementById('hour1').textContent = hour;
     document.getElementById('min1').textContent = min;
     document.getElementById('sec1').textContent = sec;
