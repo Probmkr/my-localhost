@@ -5,6 +5,7 @@ var now_time = function() {
     var day = new Date().getUTCDate();
     var month = new Date().getUTCMonth();
     var year = new Date().getFullYear();
+    var m_list = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "Octorber", "December"]
     if (sec < 10) {
         sec = '0'+sec;
     }
@@ -27,11 +28,13 @@ var now_time = function() {
         day = day + 'th';
     }
 
+
+
     document.getElementById('hour1').textContent = hour;
     document.getElementById('min1').textContent = min;
     document.getElementById('sec1').textContent = sec;
     document.getElementById('day').textContent = day;
-    document.getElementById('month').textContent = month + 1;
+    document.getElementById('month').textContent = m_list[month];
     document.getElementById('year').textContent = year;
     document.getElementById('hour2').textContent = hour;
     document.getElementById('min2').textContent = min;
