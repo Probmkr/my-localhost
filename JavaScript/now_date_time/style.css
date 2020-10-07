@@ -6,10 +6,11 @@ body {
 .all { 
     background-color: darkslateblue;
     width: 200px;
+    padding: 20px;
 }
 
 .now_time {
-    padding: 5px 5px 5px 10px;
+    padding: 0px 0px 20px 0px;
 }
 
 .time {
@@ -17,9 +18,13 @@ body {
 }
 
 .big {
-    padding: 0px 5px 5px 10px;
+    padding: 0px 0px 0px 0px;
+}
+
+.big h1 {
+    margin: 0px;
 }
 
 .now_time h4 {
-    margin: 20px 5px 0px 10px;
+    margin: 0px;
 }
