@@ -1,5 +1,5 @@
 body {
-    margin: 0px;
+    margin: 5px;
     background-color: #FFFFBB;
 }
 
@@ -13,4 +13,8 @@ body {
 
 .br {
     display: block;
+}
+
+.contents h2 {
+    background-color: antiquewhite;
 }
