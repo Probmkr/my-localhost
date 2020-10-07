@@ -18,3 +18,7 @@ body {
     background-color: darkslateblue;
     width: 200px;
 }
+
+.now_time h4 {
+    margin: auto auto 0px auto;
+}
