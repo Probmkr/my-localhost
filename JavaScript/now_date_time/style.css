@@ -3,10 +3,13 @@ body {
     background-color: #fff;
 }
 
-.now_time {
-    padding: 5px 5px 5px 10px;
+.all { 
     background-color: darkslateblue;
     width: 200px;
+}
+
+.now_time {
+    padding: 5px 5px 5px 10px;
 }
 
 .time {
@@ -14,11 +17,9 @@ body {
 }
 
 .big {
-    padding: 5px 5px 5px 10px;
-    background-color: darkslateblue;
-    width: 200px;
+    padding: 0px 5px 5px 10px;
 }
 
 .now_time h4 {
-    margin: auto auto 0px auto;
+    margin: 20px 5px 0px 10px;
 }
