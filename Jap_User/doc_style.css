@@ -23,3 +23,13 @@ body {
     list-style: none;
     padding-inline-start: 5px;
 }
+
+.constitution li{
+    margin-left: 40px;
+    list-style: disc;
+}
+
+.constitution ul p {
+    color: blue;
+    margin: 0px;
+}
