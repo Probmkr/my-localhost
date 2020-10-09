@@ -1,0 +1,21 @@
+body {
+    margin: 5px;
+    background-color: #fff;
+}
+
+.body-title {
+    margin: 5px 5px 20px 5px;
+    color: blue;
+}
+
+.directories {
+    background-color: antiquewhite;
+}
+
+.directories h2 {
+    margin: 0px;
+}
+
+.directories ul {
+    margin: 0px;
+}

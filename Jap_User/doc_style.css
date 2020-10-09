@@ -1,0 +1,24 @@
+body {
+    margin: 5px;
+    background-color: #FFFFBB;
+}
+
+.body-title {
+    margin: 5px 5px 20px 5px;
+}
+
+.red_color {
+    color: red;
+}
+
+.br {
+    display: block;
+}
+
+.contents h2 {
+    background-color: antiquewhite;
+}
+
+.creater {
+    list-style: none;
+}
