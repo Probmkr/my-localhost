@@ -17,6 +17,9 @@ body {
 
 .contents h2 {
     background-color: antiquewhite;
+    width: auto;
+    display: inline-block;
+    margin: 0px;
 }
 
 .creater {
