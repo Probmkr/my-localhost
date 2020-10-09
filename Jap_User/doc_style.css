@@ -21,4 +21,5 @@ body {
 
 .creater {
     list-style: none;
+    padding-inline-start: 5px;
 }
