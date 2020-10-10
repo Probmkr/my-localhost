@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>テスト</title>
-</head>
-<body>
-<script>
-    function fileListDirectory(files) {
-        var ファイル数 = files.length;
-        var ファイル名 = new Array();
-        var パス     = new Array();
-        for (i=0; i<ファイル数; i++) {
-            ファイル名[i] = files[i].name;
-            パス[i]       = files[i].webkitRelativePath;    // 行Ａ
-        }
-        var 表示内容 = "";
-            for (i=0; i<ファイル数; i++) {
-            if (ファイル名[i] == ".") {                     // 行Ｂ
-                表示内容 += "フォルダ：";
+    <head>
+        <title>test</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            function fileListDirectory(files) {
+                var file_num = files.length; // this "num" is mean "number of files"
+                var file_name = new Array();
+                var path     = new Array();
+                var display_con = "";
+                for (let i=0; i<file_num; i++) {
+                    file_name[i] = files[i].name;
+                    path[i]       = files[i].webkitRelativePath;    // 行Ａ
+                }
+                    for (i=0; i<file_num; i++) {
+                    if (file_name[i] == ".") {                     // 行Ｂ
+                        display_con += "フォルダ：";
+                    }
+                    else {
+                        display_con += "";
+                    }
+                    display_con += path[i] + "<br>";
+                }
+                document.getElementById('表示場所').innerHTML = display_con;
             }
-            else {
-                表示内容 += "file：";
-            }
-            表示内容 += パス[i] + "<br>";
-        }
-        document.getElementById('表示場所').innerHTML = 表示内容;
-    }
-</script>
-<p><input  type="file"
-    webkitdirectory directory                             
-    onChange="fileListDirectory(this.files)"></p>
-<div id="表示場所" class="red">結果がここに表示されます。</div>
-</body>
+        </script>
+        <p><input  type="file"
+            webkitdirectory directory                             
+            onChange="fileListDirectory(this.files)"></p>
+        <div id="表示場所" class="red">結果がここに表示されます。</div>
+    </body>
 </html>
+
