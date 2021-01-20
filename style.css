@@ -31,3 +31,44 @@ header h3 {
     text-align: center;
     color: black;
 }
+
+div.main_container {
+    display: flex;
+}
+
+div.nav {
+    background-color: lightgreen;
+    padding-right: 10px;
+    height: 100%;
+    width: max-content;
+}
+
+nav ul {
+    padding-block-start: 1em;
+    padding-block-end: 1em;
+    padding-left: 15px;
+    list-style: none;
+    height: auto;
+}
+
+nav li {
+    font-size: .9em;
+}
+
+nav li::before {
+	content: '';
+	width: 3px;
+    height: 3px;
+    display: inline-block;
+	border-radius: 100%;
+	background: #20B97B;
+	position: relative;
+	left: -7px;
+	top: -3px;
+}
+
+div.main {
+    background-color: cadetblue;
+    height: 100%;
+    display: table;
+}
