@@ -4,24 +4,30 @@
 }
 
 header {
-    height: 60px;
+    height: 100px;
+    background-color: antiquewhite;
+    width: 100%;
 }
 
 header div.container {
-    position: relative;
-    height: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
 }
 
-header div.logo {
-    float: left;
-    position: absolute;
-    margin-left: 70px;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
-header div.logo a {
-    color: black;
-    font-size: 20px;
+header a.logo {
     text-decoration: none;
+}
+
+header hgroup {
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+    color: black;
+}
+
+header h3 {
+    text-align: center;
+    color: black;
 }
